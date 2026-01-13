@@ -155,6 +155,27 @@ This tool is for educational and personal security purposes. Always use strong, 
 - [OWASP Password Security](https://owasp.org/www-community/password-special-characters)
 - [Have I Been Pwned](https://haveibeenpwned.com/)
 
+## 💰 Support the Project
+
+If you find ShieldPass useful and want to support its development, you can send a donation to one of these cryptocurrency addresses:
+
+**Bitcoin (BTC)**
+```
+bc1qr4dtngl00cl7wcm3kaglyt624w2wp6rk0j8sn5
+```
+
+**Ethereum (ETH)**
+```
+0x84b867DE6f369b75054Be91E98Ad8EBa6F5C5A57
+```
+
+**Solana (SOL)**
+```
+HUyxkPgF2ZTuAuihZmop1AGKBJZVZG5N4iUZMVurQ7oM
+```
+
+Any contribution, no matter how small, is greatly appreciated! 🙏
+
 ---
 
 Made with 💜 by [Usero0](https://github.com/Usero0)
