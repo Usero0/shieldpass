@@ -60,13 +60,7 @@ Run the program:
 python main.py
 ```
 
-### Main Menu Options
-
-1. **Generate Password** - Create a secure random password
-2. **Analyze Password** - Check strength and security of existing password
-3. **Check Breach Database** - Verify if password appears in known breaches
-4. **Generate Passphrase** - Create memorable multi-word passphrase
-5. **Generate Pronounceable Password** - Create easier-to-remember passwords
+![ShieldPass Screenshot](screenshot.png)
 
 ### Example: Generate Password
 
