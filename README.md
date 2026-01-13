@@ -1,0 +1,160 @@
+# 🛡️ ShieldPass
+
+A comprehensive Python password security tool featuring secure password generation, strength analysis, breach database checking, and detailed security metrics with colorful terminal output.
+
+## ✨ Features
+
+- **🔐 Secure Password Generation**
+  - Cryptographically secure random password generation
+  - Customizable character sets (lowercase, uppercase, digits, special characters)
+  - Pronounceable password creation for easier memorization
+  - Passphrase generation with customizable word count
+
+- **📊 Advanced Strength Analysis**
+  - Shannon entropy calculation
+  - Pattern detection (sequences, repetitions, keyboard patterns)
+  - Dictionary attack resistance checking
+  - zxcvbn integration for realistic strength estimation
+  - Time-to-crack estimation
+
+- **🚨 Breach Database Checking**
+  - Check passwords against rockyou.txt breach database
+  - k-anonymity implementation for privacy
+  - Bloom filter support for fast lookups
+  - Find similar compromised passwords
+
+- **🎨 User-Friendly Interface**
+  - Colorful terminal output with ANSI colors
+  - Clear security level indicators
+  - Detailed vulnerability reports
+  - Interactive menu system
+
+## 📋 Requirements
+
+- Python 3.7+
+- `zxcvbn` (optional, for enhanced strength analysis)
+
+## 🚀 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Usero0/shieldpass.git
+cd shieldpass
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. (Optional) Download rockyou.txt wordlist for breach checking:
+```bash
+# Place rockyou.txt in the project directory
+```
+
+## 💻 Usage
+
+Run the program:
+```bash
+python main.py
+```
+
+### Main Menu Options
+
+1. **Generate Password** - Create a secure random password
+2. **Analyze Password** - Check strength and security of existing password
+3. **Check Breach Database** - Verify if password appears in known breaches
+4. **Generate Passphrase** - Create memorable multi-word passphrase
+5. **Generate Pronounceable Password** - Create easier-to-remember passwords
+
+### Example: Generate Password
+
+```bash
+$ python main.py
+# Select option 1
+# Choose length (e.g., 16)
+# Select character types
+# Get your secure password!
+```
+
+### Example: Analyze Password
+
+```bash
+$ python main.py
+# Select option 2
+# Enter password to analyze
+# View detailed security report including:
+#   - Strength level
+#   - Entropy score
+#   - Pattern analysis
+#   - Breach status
+#   - Time to crack estimation
+```
+
+## 🔒 Security Features
+
+### Entropy Calculation
+Measures password randomness using Shannon entropy formula:
+- **Very Weak**: < 28 bits
+- **Weak**: 28-35 bits
+- **Fair**: 36-59 bits
+- **Good**: 60-127 bits
+- **Excellent**: ≥ 128 bits
+
+### Pattern Detection
+Identifies common vulnerabilities:
+- Sequential characters (abc, 123)
+- Repeated characters (aaa, 111)
+- Keyboard patterns (qwerty, asdf)
+- Common words and substitutions
+
+### Breach Checking
+- Searches rockyou.txt database (14M+ passwords)
+- Privacy-preserving k-anonymity approach
+- Fast Bloom filter lookups
+- Finds similar compromised variations
+
+## 📦 Project Structure
+
+```
+shieldpass/
+├── main.py              # Main application
+├── requirements.txt     # Python dependencies
+├── README.md           # Documentation
+├── LICENSE             # MIT License
+├── .gitignore          # Git ignore rules
+└── rockyou.txt         # Breach database (not included)
+```
+
+## 🎯 Why ShieldPass?
+
+- **Secure**: Uses Python's `secrets` module for cryptographic randomness
+- **Comprehensive**: Multiple analysis methods for thorough security assessment
+- **Privacy-Focused**: k-anonymity for breach checking
+- **Educational**: Learn about password security principles
+- **Fast**: Bloom filters and efficient algorithms
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest features
+- Submit pull requests
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ⚠️ Disclaimer
+
+This tool is for educational and personal security purposes. Always use strong, unique passwords for each account and consider using a password manager.
+
+## 📚 Learn More
+
+- [NIST Password Guidelines](https://pages.nist.gov/800-63-3/)
+- [OWASP Password Security](https://owasp.org/www-community/password-special-characters)
+- [Have I Been Pwned](https://haveibeenpwned.com/)
+
+---
+
+Made with 💜 by [Usero0](https://github.com/Usero0)
