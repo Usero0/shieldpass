@@ -128,7 +128,6 @@ shieldpass/
     └── breach_checking.py
 
 # Optional files (not included in repository):
-├── requirements.txt     # Python dependencies - create this with: zxcvbn
 ├── rockyou.txt          # Breach database for checking compromised passwords
 └── passphrase.txt       # Wordlist for passphrase generation
 ```
