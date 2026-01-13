@@ -44,13 +44,14 @@ cd shieldpass
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install zxcvbn
 ```
 
-3. (Optional) Download rockyou.txt wordlist for breach checking:
-```bash
-# Place rockyou.txt in the project directory
-```
+3. (Optional) Add wordlists for enhanced features:
+   - **rockyou.txt** - for breach checking (14M+ compromised passwords)
+   - **passphrase.txt** - for passphrase generation (wordlist with common words)
+   
+   Place both files in the project directory.
 
 ## 💻 Usage
 
@@ -119,11 +120,17 @@ Identifies common vulnerabilities:
 ```
 shieldpass/
 ├── main.py              # Main application
-├── requirements.txt     # Python dependencies
-├── README.md           # Documentation
-├── LICENSE             # MIT License
-├── .gitignore          # Git ignore rules
-└── rockyou.txt         # Breach database (not included)
+├── README.md            # Documentation
+├── LICENSE              # MIT License
+├── .gitignore           # Git ignore rules
+└── examples/            # Usage examples
+    ├── basic_usage.py
+    └── breach_checking.py
+
+# Optional files (not included in repository):
+├── requirements.txt     # Python dependencies - create this with: zxcvbn
+├── rockyou.txt          # Breach database for checking compromised passwords
+└── passphrase.txt       # Wordlist for passphrase generation
 ```
 
 ## 🎯 Why ShieldPass?
