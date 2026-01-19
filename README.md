@@ -82,14 +82,21 @@ Pattern Detection Engine flags:
 ## Usage Recipes (Copy & Paste)
 
 ```bash
-# Generate a high-entropy bank password
-python main.py  # → Option 1 → Length 20 → enable all character types
+# 1. Generate a strong random password
+python main.py
+# → Option [1] Generate Random Password
+# → Enter desired length (16-20 recommended)
+# → Select character types (all enabled for max strength)
 
-# Audit your existing password
-python main.py  # → Option 2 → paste password → receive full report
+# 2. Check if a password has been breached
+python main.py
+# → Option [2] Check Password Against Breach List
+# → Paste your password to scan against 14M+ known breaches
 
-# Create a memorable passphrase
-python main.py  # → Option 1 → Passphrase mode → 4 words
+# 3. Calculate password entropy
+python main.py
+# → Option [3] Check Password Entropy
+# → Get Shannon entropy bits and strength rating
 ```
 
 See more in examples:
