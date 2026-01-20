@@ -34,23 +34,6 @@ ShieldPass is your personal security fortress. Whether you're building enterpris
 
 ---
 
-## 🚀 Quick Start
-
-### Installation (10 seconds)
-
-```bash
-git clone https://github.com/Usero0/shieldpass.git
-cd shieldpass
-pip install zxcvbn  # Optional but recommended
-python main.py
-```
-
-**Requirements:**
-- Python 3.7+
-- Optional: `zxcvbn` (for enhanced heuristic analysis)
-
----
-
 ## 🎮 What You Can Do
 
 ### 1️⃣ Generate Passwords
@@ -212,30 +195,7 @@ python main.py
 - **Python:** 3.7 or higher
 - **Storage:** ~50MB with breach database
 
-### 🚀 Installation Steps
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/Usero0/shieldpass.git
-cd shieldpass
-
-# 2. Install optional dependencies
-pip install -r requirements.txt
-
-# 3. Run ShieldPass
-python main.py
-```
-
-### 🛠️ From Source (Developers)
-
-```bash
-git clone https://github.com/Usero0/shieldpass.git
-cd shieldpass
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
 
 ---
 
@@ -270,71 +230,7 @@ Love ShieldPass? Help us improve:
 - 🔧 Submit pull requests
 - 🌍 Spread the word!
 
----
 
-## 📄 License
-
-MIT License – Free to use, modify, and distribute.  
-See [LICENSE](LICENSE) for full details.
-
----
-
-## 🤝 Contributing
-
-We ❤️ contributions! Here's how:
-
-- 🐛 **Bug Reports:** Found an issue? Let us know with details
-- 💡 **Feature Requests:** Have an idea? We'd love to hear it
-- 🔧 **Pull Requests:** Ready to code? Send us your improvements
-- 📝 **Docs:** Help improve our documentation
-- 🌍 **Translations:** Make ShieldPass multilingual
-
-Every contribution makes ShieldPass stronger for developers everywhere!
-
----
-
-### Made with ❤️ for developers, by developers
-
-Keep your passwords unbreakable. Keep your secrets safe. Keep your data yours.
-
-🚀 **Secure your fortress today!**
-
-⬆ [back to top](#-shieldpass)
-
-See more in examples:
-- examples/basic_usage.py — getting started
-- examples/breach_checking.py — advanced breach detection
-
----
-
-## Bring Your Own Data (Optional)
-
-Place these files in the project root to unlock extras:
-
-| File | Purpose | Size |
-|------|---------|------|
-| `rockyou.txt` | Breach checking | ~140MB (14M passwords) |
-| `passphrase.txt` | Passphrase generation | Varies |
-
----
-
-## Project Layout
-
-```
-paswrd/
-├── main.py                 # Core engine
-├── requirements.txt        # Dependencies
-├── LICENSE                 # MIT
-└── examples/
-    ├── basic_usage.py      # Getting started
-    └── breach_checking.py  # Advanced breach detection
-```
-
----
-
-## Contributing
-
-Got an idea or found a bug? Issues and PRs are welcome — this project thrives on community input.
 
 ---
 
